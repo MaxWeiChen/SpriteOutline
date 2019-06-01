@@ -12,7 +12,7 @@ Shader "Sprites/SpriteOutline"
         [PerRendererData] _AlphaTex ("External Alpha", 2D) = "white" {}
         [PerRendererData] _EnableExternalAlpha ("Enable External Alpha", Float) = 0
 
-        _Outline ("Outline", Float) = 0
+        [MaterialToggle] _Outline ("Outline", Float) = 0
         _OutlineColor ("Outline Color", Color ) = (1,1,1,1)
     }
 
